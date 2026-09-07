@@ -195,6 +195,166 @@ nav a:focus {
     object-fit: contain;
 }
 
+.page-header {
+    padding-bottom: 2.5rem;
+}
+
+.page-hero {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.page-hero .logo {
+    margin-bottom: 1rem;
+}
+
+.page-kicker {
+    margin: 0;
+    color: var(--color-highlight);
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.page-hero h1 {
+    margin: 0.5rem 0 0;
+    font-size: 2.5rem;
+    line-height: 1.1;
+}
+
+.page-hero > p:last-child {
+    max-width: 600px;
+    margin: 1rem auto 0;
+    font-size: 1.1rem;
+}
+
+.services-main {
+    width: min(100%, 1100px);
+    margin: 0 auto;
+    padding: 3rem 5% 4rem;
+}
+
+.project-intro {
+    max-width: 760px;
+    margin: 0 auto 2.5rem;
+    text-align: center;
+}
+
+.project-intro h2,
+.additional-views h2,
+.during-section h2 {
+    margin: 0;
+    font-size: 1.75rem;
+}
+
+.project-intro p {
+    margin: 0.75rem 0 0;
+}
+
+.comparison-grid,
+.stage-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.photo-card {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    background-color: var(--color-background);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.photo-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.photo-card figcaption {
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+}
+
+.photo-label {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    z-index: 1;
+    padding: 0.35rem 0.75rem;
+    border-radius: 4px;
+    background-color: var(--color-highlight);
+    color: var(--color-background);
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.photo-card-after .photo-label {
+    background-color: var(--color-text);
+}
+
+.additional-views,
+.during-section {
+    margin-top: 3.5rem;
+}
+
+.additional-views > h2,
+.during-section > h2 {
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.stage-column {
+    padding: 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    background-color: var(--color-background);
+}
+
+.stage-column h3 {
+    margin: 0 0 1rem;
+    color: var(--color-highlight);
+    font-size: 1.25rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+}
+
+.photo-grid .photo-card {
+    box-shadow: none;
+}
+
+.photo-card-wide {
+    grid-column: 1 / -1;
+}
+
+.during-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.page-cta {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.page-cta p {
+    margin: 0 0 1rem;
+    font-size: 1.1rem;
+}
+
 .our-services {
     width: 100%;
     margin: 2rem 0 0;
@@ -480,6 +640,27 @@ nav a:focus {
 
     .main-heading {
         font-size: 2rem;
+    }
+
+    .page-header {
+        padding-bottom: 2rem;
+    }
+
+    .page-hero h1 {
+        font-size: 2rem;
+    }
+
+    .services-main {
+        padding: 2rem 5% 3rem;
+    }
+
+    .comparison-grid,
+    .stage-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .during-grid {
+        grid-template-columns: 1fr;
     }
 
     .hero-actions {
