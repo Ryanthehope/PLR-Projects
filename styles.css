@@ -619,6 +619,54 @@ nav a:focus {
     margin-top: 1.5rem;
 }
 
+@media (max-width: 900px) {
+    body {
+        padding-right: 25vw;
+    }
+
+    body::after {
+        width: 25vw;
+    }
+
+    .error-page {
+        padding-right: 0;
+    }
+
+    .machine-gallery {
+        right: 25vw;
+        gap: 2.5rem;
+        width: 150px;
+    }
+
+    .machine-circle {
+        flex-basis: 150px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .service-list {
+        grid-template-columns: 1fr;
+        width: min(100%, 600px);
+    }
+
+    .service-card:last-child {
+        grid-column: auto;
+        width: 100%;
+    }
+
+    .trust-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .stage-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .during-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
 @media (max-width: 600px) {
     body {
         padding-right: 0;
@@ -699,6 +747,7 @@ nav a:focus {
         right: auto;
         flex-wrap: nowrap;
         width: 100%;
+        gap: 2rem;
         margin: 2rem 0;
         transform: none;
     }
