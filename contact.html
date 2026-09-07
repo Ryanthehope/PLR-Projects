@@ -4,19 +4,74 @@
     <meta charset="UTF-8">
     <meta name="author" content="Ryan Thornton">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact | PLRProjects.co.uk</title>
+    <meta name="description" content="Contact The PLR Group for grounds maintenance, minor civil works and site service enquiries or quotes.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://plrprojects.co.uk/contact.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="PLRProjects.co.uk">
+    <meta property="og:title" content="Contact | PLRProjects.co.uk">
+    <meta property="og:description" content="Contact The PLR Group for grounds maintenance, minor civil works and site service enquiries or quotes.">
+    <meta property="og:url" content="https://plrprojects.co.uk/contact.html">
+    <meta property="og:image" content="https://plrprojects.co.uk/images/home/transparent_logo.png">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<header>
-    <h1>Contact Us</h1>
-    <nav>
+<body class="contact-page">
+<header class="page-header">
+    <nav aria-label="Main navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    <div class="page-hero">
+        <img class="logo" src="./images/home/logo.png" alt="The PLR Group logo" width="2309" height="1060" decoding="async">
+        <p class="page-kicker">Get in touch</p>
+        <h1>Contact Us</h1>
+        <p>Tell us what you need and we will be happy to discuss your project.</p>
+    </div>
 </header>
+
+<main class="contact-main">
+    <section class="contact-layout" aria-labelledby="contact-heading">
+        <div class="contact-details">
+            <h2 id="contact-heading">Let's talk about your project</h2>
+            <p>For enquiries, quotes or more information about our services, contact The PLR Group directly.</p>
+            <div class="contact-methods">
+                <p><img src="./images/svgs/phone.svg" alt="" width="24" height="24" decoding="async"> <a href="tel:07881464694">07881464694</a></p>
+                <p><img src="./images/svgs/email.svg" alt="" width="24" height="24" decoding="async"> <a href="mailto:lee@plrprojects.co.uk">lee@plrprojects.co.uk</a></p>
+                <p>Certificate number: 077752025</p>
+            </div>
+        </div>
+
+        <form class="contact-form" action="mailto:lee@plrprojects.co.uk" method="post" enctype="text/plain">
+            <h2>Send an enquiry</h2>
+            <label for="name">Name</label>
+            <input id="name" name="Name" type="text" autocomplete="name" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="Email" type="email" autocomplete="email" required>
+
+            <label for="message">How can we help?</label>
+            <textarea id="message" name="Message" rows="6" required></textarea>
+
+            <button class="button-primary" type="submit">Send enquiry</button>
+        </form>
+    </section>
+</main>
+
+<footer class="footer-section">
+    <div class="footer-bottom">
+        <div class="contact-info">
+            <p><img src="./images/svgs/phone.svg" alt="Telephone" width="24" height="24" loading="lazy" decoding="async"> 07881464694</p>
+            <p><img src="./images/svgs/email.svg" alt="Email" width="24" height="24" loading="lazy" decoding="async"> lee@plrprojects.co.uk</p>
+            <p>Certificatenumber: 077752025</p>
+        </div>
+        <p>&copy; <span id="year"></span> The PLR Group Ltd. All rights reserved.</p>
+        <p>Website by <a href="https://www.head-startwebdevelopment.co.uk" target="_blank" rel="noopener noreferrer">Head-Start Web Development</a></p>
+    </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
