@@ -32,7 +32,7 @@ body::after {
     bottom: 0;
     z-index: 0;
     width: 30vw;
-    background-image: url("./images/home/traffic_cone_optimized.jpg");
+    background-image: url("./images/home/right_side.png");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -321,11 +321,11 @@ nav a:focus {
 
 .photo-label {
     position: absolute;
-    top: 0.75rem;
-    left: 0.75rem;
+    top: 0;
+    left: 0;
     z-index: 1;
     padding: 0.35rem 0.75rem;
-    border-radius: 4px;
+    border-radius: 0 0 4px 0;
     background-color: var(--color-highlight);
     color: var(--color-background);
     font-size: 0.8rem;
